@@ -26,6 +26,13 @@ const preMovie = async () =>{
      console.log('wife: lets go we are getting late');
      console.log(`husband: thank you for the reminder *grins*`);
 
+     const getColdDrinks = new Promise((resolve, reject) => resolve(`cold drinks`));
+     let drinks = await getColdDrinks;
+   
+     console.log(`husband: i got some ${drinks}`);
+     console.log('husband: ok, let\'s go in');
+     console.log(`wife: thank you for getting me everything i wanted *smiles*`);
+
 
     return ticket;
 }
