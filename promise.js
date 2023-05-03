@@ -18,7 +18,13 @@ const butter = getPopcorn.then((t)=>{
     console.log('wife: I need butter on popcorn');
     return new Promise((resolve,reject)=>resolve(`${t} butter`))
 });
-butter.then((t)=>console.log(t));
+const getColdDrinks = butter.then((t)=>{
+    console.log('husband: I got some butter on popcorn');
+    console.log('husband: Let\'s go get some cold drinks');
+    console.log('wife: Great idea!');
+    return new Promise((resolve,reject)=>resolve(`${t} cold drinks`));
+  });
+  getColdDrinks.then((t)=>console.log(t));
 
 console.log('person4: shows ticket');
 console.log('person5: shows ticket');
